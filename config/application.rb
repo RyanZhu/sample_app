@@ -64,5 +64,10 @@ module SampleApp
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    config.time_zone = 'Beijing'  
+    config.i18n.default_locale = 'zh-CN'  
+    config.generators do |g|  
+         g.template_engine :haml  
+    end  
   end
 end

@@ -8,6 +8,7 @@ group :development do
   gem 'sqlite3','1.3.5'
   gem 'rspec-rails', '2.11.0'
 end
+gem "haml-rails",'0.3.5'
 
 gem 'haml','3.1.7'
 # Gems used only for assets and not required
