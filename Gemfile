@@ -4,9 +4,12 @@ gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-group :development do
+group :development, :test do
   gem 'sqlite3','1.3.5'
   gem 'rspec-rails', '2.11.0'
+  gem 'guard-rspec', '1.2.1'
+  gem 'guard-spork', '1.2.0'
+  gem 'spork', '0.9.2'
 end
 gem "haml-rails",'0.3.5'
 
@@ -33,6 +36,8 @@ gem 'therubyracer','0.10.1'
 # gem 'jbuilder'
 group :test do
     gem 'capybara', '1.1.2'
+    gem 'rb-inotify', '0.8.8'
+    gem 'libnotify', '0.8.0'
 end
 # Use unicorn as the app server
 # gem 'unicorn'
